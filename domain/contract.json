@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "紧急缺岗接力",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "文博中心运营员",
+    "志愿者",
+    "监护人",
+    "场馆负责人"
+  ],
+  "states": [
+    "草拟",
+    "待核验",
+    "已确认",
+    "执行中",
+    "已归档"
+  ],
+  "invariants": [
+    "紧急候选筛选",
+    "首确认原子获岗",
+    "邀请超时失效",
+    "事务通知投递"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910033-004-A",
+      "actor": "文博中心运营员",
+      "state": "草拟"
+    },
+    {
+      "case_id": "0910033-004-B",
+      "actor": "场馆负责人",
+      "state": "待核验"
+    }
+  ],
+  "tags": [
+    "emergency-cover",
+    "claim-race"
+  ]
+}
