@@ -1,6 +1,12 @@
 [project]
 name = "domain-contract-0910033-004"
-version = "0.1.0"
-description = "紧急缺岗接力的领域约定与校验工具"
+version = "0.2.0"
+description = "紧急缺岗接力：领域约定、校验工具与接力服务端"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+relay-server = "relay.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
